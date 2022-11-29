@@ -1,0 +1,76 @@
+<!-- Det dukket opp 16 røde errors og 4 gule warnings når jeg validerte denne filen. Alle disse ble borte når jeg rettet
+på de.
+-->
+
+<!-- Feil: På første kodelinjen rettet jeg på en feil, som det viste på valideringen. Det var glemt å bruke '!DOCTYPE' foran 'html' -->
+<!DOCTYPE html>
+<!-- Feil: Jeg fikset på en gul warning. Jeg la til attributte lang under på linje nummer 6 -->
+<html lang="en">
+  <!-- Feil: Jeg fjernet en rød error her, ved at body tagen ble brukt over head. Det er feil -->
+  <head>
+    <!-- Jeg la til meta charset taggen under for å fjerne en rød error -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Feil: Fikset på en rød warning under her. Var glemt å bruke '' tegnet på style.css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Web eksamen del 1</title>
+  </head>
+  <body>
+    <nav>
+      <!-- Feil: Fikset en warning. Jeg endret på linjen under fra h1 til en h3 tag.  -->
+      <h3>Logo</h3>
+      <!-- Feil: Fikset en rød warning under her. Jeg la til ul tagen over og under li taggen. -->
+      <ul>
+        <li><a href="#">Boatswain schooner</a></li>
+        <li><a href="#">Account lookout</a></li>
+        <li><a href="#">Sail ho shrouds</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Yar Pirate Ipsum</h1>
+      <p>
+        Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast
+        yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog
+        yardarm hempen halter furl.
+      </p>
+      <a class="button">Les mer</a>
+    </header>
+    <!-- Jeg rettet på en forbedring her som ikke kom opp på valideringen. Jeg fjernet id tagen og skrev bare 'main' i stedet for.
+    Dermed ble artiklene som de skulle -->
+    <main>
+      <article>
+        <!-- Feil: Fikset en warning. Jeg endret på linjen under fra h1 til en h3 tag.  -->
+        <h3>Prow scuttle</h3>
+        <p>
+          Deadlights jack lad schooner scallywag dance the hempen jig carouser
+          broadside cable strike colors.
+        </p>
+        <a href="#">Les mer</a>
+        <!-- Feil: Fikset en error i linjen under. Det var glemt en closing tag for article. -->
+      </article>
+      <article>
+        <!-- Feil: Fikset en warning. Jeg endret på linjen under fra h1 til en h3 tag.  -->
+        <h3>Jack Tar transom</h3>
+        <p>
+          Deadlights jack lad schooner scallywag dance the hempen jig carouser
+          broadside cable strike colors.
+        </p>
+        <a href="#">Les mer</a>
+      </article>
+      <article>
+        <!-- Feil: Fikset en warning. Jeg endret på linjen under fra h1 til en h3 tag.  -->
+        <h3>Trysail Sail</h3>
+        <p>
+          Deadlights jack lad schooner scallywag dance the hempen jig carouser
+          broadside cable strike colors.
+        </p>
+        <a href="#">Les mer</a>
+      </article>
+    </main>
+    <footer>
+      <span>Twitter</span>
+      <span>Facebook</span>
+      <span>Instagram</span>
+    </footer>
+  </body>
+</html>
